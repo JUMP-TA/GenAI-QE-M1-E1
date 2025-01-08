@@ -32,6 +32,7 @@ If you plan to run the application or write tests, you may need the following:
 
 - **Python 3.7+** (or any later version).  
 - **No additional libraries** are strictly required for the main application, since it only uses Python’s standard library.
+- **Github Copilot VS Code Extension** can be found in the extensions marketplace. You'll need to be signed into a Github account to access the extension.
 - **Optional**: If you plan to use a test framework such as `pytest`, install it:
   ```bash
   pip install pytest
@@ -49,7 +50,7 @@ Before generating tests with GitHub Copilot, it’s important to understand what
    - Each story details a requirement, such as adding tasks, listing tasks, marking them as completed, etc.
 
 - **Examine the Python Code**  
-   - Look at `todo_manager.py` (or the file name you’ve used).  
+   - Look at `app.py` (or the file name you’ve used).  
    - Study how each function implements (or attempts to implement) the features from the user stories.  
    - Note any bugs or quirks (e.g., the known bug in the `filter_tasks` function for pending tasks).
 
@@ -67,11 +68,11 @@ Before generating tests with GitHub Copilot, it’s important to understand what
    - Think about edge cases (e.g., invalid task IDs, empty titles).
 
 2. **Set Up a Test File**  
-   - Create a new file (e.g., `test_todo_manager.py`).
+   - Create a new file (e.g., `test_app.py`).
    - You can use `pytest` or `unittest`; both are valid options.
 
 3. **Use GitHub Copilot to Generate Test Stubs**  
-   - Open `test_todo_manager.py` in an IDE with Copilot enabled.
+   - Open `test_app.py` in an IDE with Copilot enabled.
    - Write a descriptive comment about the test you want, such as:
      ```python
      # Test that a new task can be added with the correct title, description, and status.
@@ -83,7 +84,7 @@ Before generating tests with GitHub Copilot, it’s important to understand what
 4. **Example of a Copilot-Generated Test**  
    ```python
    import os
-   from todo_manager import add_task, load_tasks
+   from app import add_task, load_tasks
 
    def test_add_task():
        # Clean up any existing data file before running the test
@@ -112,7 +113,7 @@ Before generating tests with GitHub Copilot, it’s important to understand what
 
 6. **Address the Intentional Error**  
    - The `filter_tasks` function has an intentional bug for "pending" tasks (`task["completed"] == True` instead of `False`).  
-   - Write a test to confirm the correct behavior, observe the failure, then fix the bug in `todo_manager.py`.  
+   - Write a test to confirm the correct behavior, observe the failure, then fix the bug in `app.py`.  
    - Re-run your tests to verify the fix resolves the issue.
 
 ## Running Your Tests

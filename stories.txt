@@ -1,0 +1,14 @@
+[STORY 1] - Add a Task
+As a user, I want to create a new task with a title so that I can keep track of what needs to be done.
+
+[STORY 2] - List Tasks
+As a user, I want to view all my tasks so that I can see what needs to be worked on.
+
+[STORY 3] - Mark Task as Completed
+As a user, I want to mark a task as completed so that I can differentiate between my pending and finished tasks.
+
+[STORY 4] - Delete a Task
+As a user, I want to delete a task so that I can keep my task list relevant and up to date.
+
+[STORY 5] - Filter Tasks by Status
+As a user, I want to filter tasks to only show completed or only show pending tasks so that I can quickly see my progress.

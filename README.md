@@ -28,11 +28,11 @@ You should now see the following files (or similarly named ones) in the project 
 
 2. **Install Dependencies**
 
-If you plan to run the application or write tests, you may need the following:
+If you plan to run the application or write tests, you will need the following:
 
 - **Python 3.7+** (or any later version).  
 - **No additional libraries** are strictly required for the main application, since it only uses Python’s standard library.
-- **Github Copilot VS Code Extension** can be found in the extensions marketplace. You'll need to be signed into a Github account to access the extension.
+- **Github Copilot VS Code Extension** can be found in the extensions marketplace on VS Code. You'll need to be signed into a Github account to access the extension.
 - **Optional**: If you plan to use a test framework such as `pytest`, install it:
   ```bash
   pip install pytest
